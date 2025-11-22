@@ -1,0 +1,7 @@
+record_type,name,description,monthly_price_usd,monthly_credits,revenue_per_credit_usd,credits_per_operation,revenue_per_operation_usd,min_gross_margin,max_cogs_usd,buffer_pct,target_cogs_usd,notes
+plan,Lite,Starter plan,9.99,115,0.086870,,,,,,,Derived RPC = price/credits
+plan,Pro,Power plan,29.99,375,0.079973,,,,,,,Derived RPC = price/credits
+plan,Max,High-volume plan,59.99,800,0.074988,,,,,,,Derived RPC = price/credits (worst-case baseline)
+operation,Raster,1-bit raster generation,,,,1,0.074988,0.40,0.044993,0.20,0.035994,Target = MaxCOGS*(1-Buffer)
+operation,Vector,Deterministic vectorisation/binarisation,,,,2,0.149975,0.40,0.089985,0.20,0.071988,Target = MaxCOGS*(1-Buffer)
+operation,FixUpscale,Fix/Upscale pass (incl. Judge),,,,0.5,0.037494,0.40,0.022496,0.20,0.017997,Target = MaxCOGS*(1-Buffer)
