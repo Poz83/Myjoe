@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+/* Basic dark theme + font */
+body {
+  @apply bg-black text-zinc-50 font-sans;
+}
+
+/* Simple default link styling */
+a {
+  @apply text-sky-400 underline-offset-4 hover:text-sky-300;
+}
+
+/* Thin default borders, matches the dark shell */
+*,
+*::before,
+*::after {
+  @apply border-zinc-800;
+}

@@ -1,5 +1,25 @@
 {
   "devDependencies": {
-    "supabase": "^2.58.5"
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.6",
+    "postcss": "^8.5.6",
+    "supabase": "^2.58.5",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "lint": "next lint || echo \"lint not configured yet\"",
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.84.0",
+    "autoprefixer": "^10.4.22",
+    "next": "^16.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }
